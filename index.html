@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Parres Centro Parasanitario</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      color: #2e7d32;
+    }
+    header {
+      background-image: url('https://images.unsplash.com/photo-1612831455540-4d1bccef5c89?auto=format&fit=crop&w=1400&q=80');
+      background-size: cover;
+      background-position: center;
+      padding: 6em 1em;
+      position: relative;
+      color: #2e7d32;
+    }
+    header::before {
+      content: "";
+      background-color: rgba(255, 255, 255, 0.7);
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+    }
+    header h1, header p {
+      position: relative;
+      z-index: 1;
+    }
+    header h1 {
+      font-size: 2.8em;
+      font-weight: bold;
+    }
+    nav {
+      background: #2e7d32;
+      padding: 1em;
+      text-align: center;
+    }
+    nav select {
+      padding: 0.5em;
+      font-size: 1em;
+      border-radius: 5px;
+    }
+    main {
+      padding: 2em;
+      max-width: 900px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 3em;
+    }
+    .service-desc {
+      display: none;
+      margin-top: 1em;
+      background: #ffffff;
+      padding: 1em;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    footer {
+      background-color: #2e2e2e;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+    h2 {
+      color: #2e7d32;
+    }
+    ul {
+      margin-left: 1em;
+    }
+    a.boton {
+      display: inline-block;
+      margin-right: 1em;
+      margin-top: 1em;
+      padding: 0.8em 1.5em;
+      border-radius: 6px;
+      text-decoration: none;
+      color: white;
+    }
+    .contactar { background-color: #2e7d32; }
+    .reservar { background-color: #388e3c; }
+    .pagar { background-color: #1e88e5; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Parres Centro Parasanitario</h1>
+    <p>Tu espacio de bienestar integral en Arriondas</p>
+  </header>
+
+  <nav>
+    <label for="menu-servicios" style="color: white; font-weight: bold;">Nuestros Servicios:</label>
+    <select id="menu-servicios" onchange="mostrarServicio()">
+      <option value="">Selecciona uno</option>
+      <option value="osteo">Osteopatía</option>
+      <option value="nutricion">Nutrición</option>
+      <option value="yoga">Yoga</option>
+      <option value="posturologia">Posturología</option>
+      <option value="drenaje">Drenaje linfático</option>
+      <option value="acupuntura">Acupuntura</option>
+      <option value="reflexologia">Reflexología podal</option>
+      <option value="quiromasaje">Quiromasaje</option>
+      <option value="pnl">Programación Neurolingüística</option>
+    </select>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Descripción del Servicio</h2>
+      <div id="descripcion" class="service-desc"></div>
+    </section>
+
+    <section>
+      <h2>Sobre Nosotros</h2>
+      <p>En Parres Centro Parasanitario acompañamos a las personas en su proceso de equilibrio físico, emocional y funcional. Contamos con un equipo humano especializado y comprometido, en un entorno cercano, tranquilo y profesional.</p>
+
+      <h3>Narcis Ciubotariu Amariscai</h3>
+      <ul>
+        <li>Osteópata titulado según la Normativa Europea UNE-EN 16686:2015 (Universidad Europea del Atlántico / Grupo Thuban)</li>
+        <li>Socio nº 0521 del Colegio de Osteópatas de España</li>
+        <li>Máster en Ciencia del Movimiento, Fascia y Postura (UNEA / Grupo Thuban)</li>
+        <li>Técnico Superior en Dietética y Nutrición</li>
+        <li>Miembro de Practitioner's Register nº 4.445-12.410, adscrito a la Fundación Europea de Medicina Tradicional, Complementaria e Integrativa</li>
+      </ul>
+
+      <h3>Alba Pérez García</h3>
+      <ul>
+        <li>Estudiante de Psicología (UNED)</li>
+        <li>Profesora de Yoga por YOGA EVOLUTION SCHOOL (adscrita a la Fundación Europea de Yoga Allianz)</li>
+        <li>Formación universitaria en Mindfulness y Programación Neurolingüística (PNL)</li>
+        <li>Socia nº 492 de la Asociación de Profesionales de Terapias Naturales (PROTENAT)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contacto</h2>
+      <p><strong>Dirección:</strong> Calle Severo Ochoa 5 bajo, 33540 Arriondas, Asturias</p>
+      <p><strong>Teléfonos:</strong> 683532072 / 685553378</p>
+      <p><strong>Email:</strong> <a href="mailto:terapiasintegrales2008@gmail.com">terapiasintegrales2008@gmail.com</a></p>
+      <a href="mailto:terapiasintegrales2008@gmail.com" class="boton contactar">📧 Contactar</a>
+      <a href="https://calendly.com" target="_blank" class="boton reservar">📅 Reservar Cita</a>
+      <a href="https://www.paypal.com/paypalme/tuusuario" target="_blank" class="boton pagar">💳 Pagar</a>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Parres Centro Parasanitario
+  </footer>
+
+  <script>
+    const descripciones = {
+      osteo: "Enfoque manual que mejora la movilidad y funcionalidad del cuerpo mediante manipulaciones específicas del sistema musculoesquelético, craneal y visceral.",
+      nutricion: "Orientación personalizada que considera la alimentación, el estilo de vida y las necesidades emocionales de cada persona.",
+      yoga: "Práctica ajustada a cada persona, centrada en la respiración, la conciencia corporal y el equilibrio emocional.",
+      posturologia: "Abordaje de los desequilibrios posturales mediante el estudio del sistema tónico postural y sus interacciones corporales.",
+      drenaje: "Técnica suave que estimula el sistema linfático para reducir la retención de líquidos, mejorar la circulación y desintoxicar el cuerpo.",
+      acupuntura: "Técnica de la medicina tradicional china que utiliza agujas para armonizar la energía del cuerpo y aliviar molestias.",
+      reflexologia: "Estimulación de zonas reflejas del pie asociadas a distintos órganos y sistemas, promoviendo el bienestar general.",
+      quiromasaje: "Masaje manual que favorece la relajación y revitalización de los tejidos musculares y articulares.",
+      pnl: "Herramientas de comunicación y cambio personal para generar nuevas estrategias de bienestar y crecimiento personal."
+    };
+
+    function mostrarServicio() {
+      const servicio = document.getElementById("menu-servicios").value;
+      const descDiv = document.getElementById("descripcion");
+      if (servicio && descripciones[servicio]) {
+        descDiv.innerHTML = "<p>" + descripciones[servicio] + "</p>";
+        descDiv.style.display = "block";
+      } else {
+        descDiv.innerHTML = "";
+        descDiv.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
