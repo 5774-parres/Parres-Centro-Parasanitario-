@@ -13,7 +13,7 @@
       color: #2e7d32;
     }
     header {
-      background-image: url('https://images.unsplash.com/photo-1612831455540-4d1bccef5c89?auto=format&fit=crop&w=1400&q=80');
+      background-image: url('https://images.unsplash.com/photo-1613474279113-61f8c9e50578?auto=format&fit=crop&w=1400&q=80');
       background-size: cover;
       background-position: center;
       padding: 6em 1em;
@@ -23,6 +23,7 @@
     header::before {
       content: "";
       background-color: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(2px);
       position: absolute;
       top: 0; left: 0;
       width: 100%; height: 100%;
@@ -98,7 +99,7 @@
     <select id="menu-servicios" onchange="mostrarServicio()">
       <option value="">Selecciona uno</option>
       <option value="osteo">Osteopatía</option>
-      <option value="nutricion">Nutrición</option>
+      <option value="nutricion">Dietética y Nutrición</option>
       <option value="yoga">Yoga</option>
       <option value="posturologia">Posturología</option>
       <option value="drenaje">Drenaje linfático</option>
@@ -122,7 +123,7 @@
       <h3>Narcis Ciubotariu Amariscai</h3>
       <ul>
         <li>Osteópata titulado según la Normativa Europea UNE-EN 16686:2015 (Universidad Europea del Atlántico / Grupo Thuban)</li>
-        <li>Socio nº 0521 del Colegio de Osteópatas de España</li>
+        <li>Socio nº 0521 de la Organización Colegial de Osteópatas de España (OCOE)</li>
         <li>Máster en Ciencia del Movimiento, Fascia y Postura (UNEA / Grupo Thuban)</li>
         <li>Técnico Superior en Dietética y Nutrición</li>
         <li>Miembro de Practitioner's Register nº 4.445-12.410, adscrito a la Fundación Europea de Medicina Tradicional, Complementaria e Integrativa</li>
@@ -155,7 +156,7 @@
   <script>
     const descripciones = {
       osteo: "Enfoque manual que mejora la movilidad y funcionalidad del cuerpo mediante manipulaciones específicas del sistema musculoesquelético, craneal y visceral.",
-      nutricion: "Orientación personalizada que considera la alimentación, el estilo de vida y las necesidades emocionales de cada persona.",
+      nutricion: "Orientación personalizada basada en los principios de la dietética y la nutrición, teniendo en cuenta el estilo de vida y las necesidades individuales.",
       yoga: "Práctica ajustada a cada persona, centrada en la respiración, la conciencia corporal y el equilibrio emocional.",
       posturologia: "Abordaje de los desequilibrios posturales mediante el estudio del sistema tónico postural y sus interacciones corporales.",
       drenaje: "Técnica suave que estimula el sistema linfático para reducir la retención de líquidos, mejorar la circulación y desintoxicar el cuerpo.",
